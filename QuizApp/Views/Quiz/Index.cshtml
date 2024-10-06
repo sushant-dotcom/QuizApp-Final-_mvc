@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<Quiz>   
+
+<h1>Quiz List</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Sr.No
+            </th>
+            <th>
+                Topic
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <td>
+                    @obj.quiz_id
+                </td>
+                <td>
+                    @obj.Topic
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
