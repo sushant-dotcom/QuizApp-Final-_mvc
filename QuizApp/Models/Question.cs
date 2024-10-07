@@ -10,15 +10,23 @@ namespace QuizApp.Models
         public int QuizId { get; set; }
         [Required]
         public string QuestionText { get; set; }
-        //public string OptionA { get; set; }
-        //public string OptionB { get; set; }
-        //public string OptionC { get; set; }
-        //public string OptionD { get; set; }
-        //public string CorrectOption { get; set; }
-        //public int TimeLimitInSeconds { get; set; }
-        //public int Difficulty { get; set; }
-
-        //public int CreatedBy { get; set; }
-        //public int CreatedAt { get; set; }
+        [Required]
+        public string OptionA { get; set; }
+        [Required]
+        public string OptionB { get; set; }
+        [Required]
+        public string OptionC { get; set; }
+        [Required]
+        public string OptionD { get; set; }
+        [Required]
+        public string CorrectOption { get; set; }
+        [Required]
+        public int TimeLimitInSeconds { get; set; }
+        [Required]
+        public string Difficulty { get; set; }
+        [Required]
+        public int CreatedBy { get; set; }
+        [Required]
+        public int CreatedAt { get; set; }
     }
 }

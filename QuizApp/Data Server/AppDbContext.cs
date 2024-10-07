@@ -26,5 +26,6 @@ namespace QuizApp.Data_Server
                   );
         }
         public DbSet<Quiz> Quiz { get; set; }
+        public DbSet<Submission> Submissions { get; set; }
     }
 }
