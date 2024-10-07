@@ -5,6 +5,7 @@ using System.Diagnostics;
 namespace QuizApp.Controllers
 {
     public class HomeController : Controller
+        //hey whats up
     {
         private readonly ILogger<HomeController> _logger;
 
