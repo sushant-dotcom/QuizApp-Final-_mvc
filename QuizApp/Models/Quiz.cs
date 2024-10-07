@@ -11,6 +11,7 @@ namespace QuizApp.Models
         [MaxLength(15)]
         [DisplayName("Topic Name")]
         public string Topic { get; set; }
+        //whats up 
 
     }
 }
