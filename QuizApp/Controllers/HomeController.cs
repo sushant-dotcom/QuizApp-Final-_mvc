@@ -8,7 +8,8 @@ namespace QuizApp.Controllers
         //hey whats up
     {
         private readonly ILogger<HomeController> _logger;
-
+        //testing for sushant development
+        //this is for test
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
