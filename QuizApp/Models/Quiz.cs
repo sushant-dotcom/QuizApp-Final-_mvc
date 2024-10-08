@@ -6,6 +6,7 @@ namespace QuizApp.Models
     public class Quiz
     {
         [Key]
+        [DisplayName("Id")]
         public int  quiz_id { get; set; }
         [Required]
         [MaxLength(15)]

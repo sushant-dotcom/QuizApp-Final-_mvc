@@ -27,14 +27,18 @@
                 Topic
             </th>
             <th></th>
+            
         </tr>
     </thead>
     <tbody>
+            @{      //razor syntax
+                int srNo = 1;  // Initialize the serial number
+            }
         @foreach(var obj in Model)
         {
             <tr>
                 <td>
-                    @obj.quiz_id
+                        @srNo
                 </td>
                 <td>
                     @obj.Topic
@@ -44,12 +48,16 @@
                             <a asp-controller="Quiz" asp-action="Edit" asp-route-Id="@obj.quiz_id" class="btn btn-primary mx-2">
                                 <i class="bi bi-pencil-square"></i> Edit
                             </a>             
-                                <a asp-controller="Quiz" asp-action="Delete" class="btn btn-danger mx-2">
+                                <a asp-controller="Quiz" asp-action="Delete" asp-route-Id =" @obj.quiz_id" class="btn btn-danger mx-2">
                                     <i class="bi bi-trash"></i> Delete
                                 </a>
+                            <a asp-controller="Question" asp-action=""  class="btn btn-primary mx-2">
+                                <i class="bi bi-plus-lg"></i>  Add Question
+                            </a>
                     </div>
                 </td>
             </tr>
+            srNo++;
         }
     </tbody>
 </table>
